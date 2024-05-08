@@ -56,5 +56,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://oasolomon.vercel.app)
-- LinkedIn - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Solomon Owusu-Ansah](https://oasolomon.vercel.app)
+- LinkedIn - [Solomon Owusu-Ansah](https://www.linkedin.com/in/solomon-owusu-ansah/)
