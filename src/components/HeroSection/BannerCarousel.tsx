@@ -31,12 +31,26 @@ const BannerCarousel = () => {
     },
   ]);
   const [currentSlide, setCurrentSlide] = React.useState(0);
+
   const prevSlide = () => {
     setCurrentSlide((sl) => (sl === 0 ? slides.length - 1 : sl - 1));
   };
   const nextSlide = () => {
     setCurrentSlide((sl) => (sl === slides.length - 1 ? 0 : sl + 1));
   };
+
+  const handleKeyDown = (event: { keyCode: number }) => {
+    const keyCode = event.keyCode;
+
+    if (keyCode === 37) prevSlide();
+    else if (keyCode === 39) nextSlide();
+  };
+
+  React.useEffect(() => {
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   return (
     <CarouselWrapper>
